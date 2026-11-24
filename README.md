@@ -7,8 +7,8 @@ This project processes public observational catalogs from the **Fermi-LAT 4FHL**
 
 ## Key Analytical & Quantitative Components
 * **Data Ingestion & Catalog Processing:** Automated parsing, filtering, and validation of multi-dimensional FITS astronomical tables (`4FHL_catalog.fit`) using `Astropy`.
-* **Parametric Spectral Modeling:** Implementation and comparison of multiple non-linear spectral models (*Power Law*, *Log-Parabola*, and *Exponential Cutoff*) alongside Spectral Energy Distribution (SED) confidence/butterfly uncertainty bands.
-* **Observability & Monte Carlo-style Simulations:** Simulation of source excess photon rates versus background noise rates using `Gammapy` instrument response functions (IRFs) configured for both CTA-North and CTA-South geographic coordinates.
+* **Power-Law Spectral Modeling:** Implementation of Power-Law spectral approximations—chosen to handle low photon statistics at very high energies—alongside Spectral Energy Distribution (SED) confidence/butterfly uncertainty bands.
+* **Statistical Detectability Simulations:** Simulation of source excess photon rates versus background noise rates using `Gammapy` instrument response functions (IRFs) configured for both CTA-North and CTA-South geographic coordinates.
 * **Statistical Significance Optimization:** Numerical computation of exposure time curves to determine exact thresholds required to reach $5\sigma$ statistical significance across varying flux regimes and sky hemispheres.
 
 ## Tech Stack
